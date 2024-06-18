@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-public class MapStructure {
+public class MapExample {
 
     @Test
     public void run() {

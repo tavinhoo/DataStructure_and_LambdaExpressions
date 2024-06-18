@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class Lists {
+public class ListExample {
 
     @Test
         public void run() {
