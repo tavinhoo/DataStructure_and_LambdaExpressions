@@ -60,6 +60,23 @@ public class Main {
                 .collect(Collectors.toList());
         System.out.println(lengths); // [3, 3, 5]
 
+        /* Métodos de Referência */
+
+        // Referência a Métodos Estáticos:
+
+        List<String> list = Arrays.asList("a", "b", "A", "B");
+        list.sort(String::compareToIgnoreCase);
+        System.out.println(list); // [a, A, b, B]
+
+        // Referência a Métodos de Instância:
+
+        List<String> list = Arrays.asList("a", "b", "A", "B");
+        list.forEach(System.out::println);
+
+        // Referência a Construtores:
+
+        Supplier<List<String>> listSupplier = ArrayList::new;
+        List<String> list = listSupplier.get();
 
     }
 }
