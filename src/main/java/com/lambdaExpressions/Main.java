@@ -78,5 +78,17 @@ public class Main {
         Supplier<List<String>> listSupplier = ArrayList::new;
         List<String> list = listSupplier.get();
 
+        /* Captura de Variáveis Locais */
+        String prefix = "Hello, ";
+        Consumer<String> consumer = (s) -> System.out.println(prefix + s);
+        consumer.accept("World!");
+
+        /* Uso com Coleções Paralelas */
+        String prefix = "Hello, ";
+        Consumer<String> consumer = (s) -> System.out.println(prefix + s);
+        consumer.accept("World!");
+
+
+
     }
 }
